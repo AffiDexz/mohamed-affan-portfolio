@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mohamed Affan — Software Engineer</title>
+<meta name="description" content="Mohamed Affan — Software Engineering undergraduate and full-stack developer specializing in React, Node.js, PHP, and Flutter." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%232dd4bf%22>A</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container nav-wrap">
+    <a href="#home" class="logo">M<span>A</span>.dev</a>
+
+    <nav class="nav" id="primaryNav">
+      <a href="#home" class="nav-link active-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+        <svg class="icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="assets/resume/Mohamed-Affan-Resume.pdf" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Resume</a>
+      <button id="navToggle" class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="grid-lines"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="container hero-content reveal">
+      <p class="eyebrow">Software Engineering Undergraduate</p>
+      <h1>Hi, I'm <span class="text-gradient">Mohamed Affan</span></h1>
+      <h2 class="role-line">
+        <span id="rotatingRole">Full-Stack Web Developer</span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc">
+        I build end-to-end web and mobile applications — from relational database design and
+        secure REST APIs to responsive, role-based interfaces — using React, Node.js, PHP, and Flutter.
+        Currently seeking a software engineering internship to bring that full-stack experience to a real product team.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="assets/resume/Mohamed-Affan-Resume.pdf" target="_blank" rel="noopener" class="btn btn-outline">Download CV</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/AffiDexz" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.94 3.2 9.13 7.65 10.61.56.1.76-.24.76-.54 0-.27-.01-1.16-.02-2.11-3.11.68-3.77-1.32-3.77-1.32-.51-1.3-1.24-1.65-1.24-1.65-1.01-.7.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.71 2.62 1.22 3.26.93.1-.72.39-1.22.71-1.5-2.49-.28-5.1-1.24-5.1-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.24-5.12 5.52.4.35.76 1.03.76 2.08 0 1.5-.01 2.71-.01 3.08 0 .3.2.65.77.54 4.44-1.48 7.64-5.67 7.64-10.61C23.02 5.24 18.27.5 12 .5z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/mohamed-affan-dev" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="mailto:mamohamedaffan@gmail.com" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h18v14H3z"/><path d="m3 6 9 7 9-7"/></svg>
+        </a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-tag reveal">About Me</p>
+      <h2 class="section-title reveal">Turning ideas into shipped, working software</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a Software Engineering undergraduate at <strong>SLTC Research University (ICST Campus)</strong>,
+            with hands-on experience delivering commercial and academic full-stack web and mobile applications.
+            I'm comfortable across the full Software Development Life Cycle — using Agile and Scrum, version
+            control with Git and GitHub, and modern frameworks including React, Node.js, Flutter, and PHP.
+          </p>
+          <p>
+            I like building systems that are actually used: role-based access control, relational databases,
+            REST APIs, and interfaces that hold up on real devices — not just demos. Recent work includes
+            leading a 4-person team as project manager, and shipping a production Flutter Android app.
+          </p>
+          <div class="about-facts">
+            <div class="fact">
+              <span class="fact-label">Location</span>
+              <span class="fact-value">Puttalam, Sri Lanka</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">Education</span>
+              <span class="fact-value">BSc (Hons) IT — SLTC / ICST, 2024–2027</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">Focus</span>
+              <span class="fact-value">Full-Stack Web &amp; Mobile Development</span>
+            </div>
+            <div class="fact">
+              <span class="fact-label">Languages</span>
+              <span class="fact-value">English, Tamil, Sinhala</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-num" data-count="4">0</span>
+            <span class="stat-label">Full-Stack &amp; Mobile Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="4">0</span>
+            <span class="stat-label">Certifications Earned</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="10">0</span>
+            <span class="stat-label">Core Technologies</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Languages Spoken</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <p class="section-tag reveal">Skills</p>
+      <h2 class="section-title reveal">Technologies I work with</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3>Languages</h3>
+          <div class="tags">
+            <span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">SQL</span>
+            <span class="tag">Dart</span><span class="tag">HTML5</span><span class="tag">CSS3</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Frameworks &amp; Libraries</h3>
+          <div class="tags">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Express.js</span>
+            <span class="tag">Bootstrap</span><span class="tag">Flutter</span><span class="tag">Provider</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Database &amp; Cloud</h3>
+          <div class="tags">
+            <span class="tag">MySQL</span><span class="tag">Firebase Firestore</span>
+            <span class="tag">Firebase Auth</span><span class="tag">Firebase Storage</span>
+            <span class="tag">REST API</span><span class="tag">PDO</span><span class="tag">bcrypt</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Tools &amp; Platforms</h3>
+          <div class="tags">
+            <span class="tag">Git &amp; GitHub</span><span class="tag">VS Code</span><span class="tag">Vite</span>
+            <span class="tag">XAMPP</span><span class="tag">Figma</span><span class="tag">Jira</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Methodologies</h3>
+          <div class="tags">
+            <span class="tag">Agile</span><span class="tag">Scrum</span><span class="tag">OOP</span>
+            <span class="tag">MVC</span><span class="tag">RBAC</span><span class="tag">SDLC</span>
+            <span class="tag">Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Soft Skills</h3>
+          <div class="tags">
+            <span class="tag">Leadership</span><span class="tag">Teamwork</span>
+            <span class="tag">Time Management</span><span class="tag">Communication</span>
+            <span class="tag">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="section-tag reveal">Projects</p>
+      <h2 class="section-title reveal">Things I've built</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-head">
+            <h3>DineFlow ERP</h3>
+            <span class="project-date">June 2026 – Present</span>
+          </div>
+          <p class="project-sub">Restaurant Management Enterprise Web Application</p>
+          <ul class="project-points">
+            <li>Full-stack Restaurant ERP with 6 modules: Order Management, Inventory, Billing &amp; Payments, Staff, Menu, and Reporting</li>
+            <li>PHP 8 MVC backend, Bootstrap 5 frontend, MySQL database, and 4-role RBAC (Admin, Cashier, Kitchen Staff, Inventory Staff)</li>
+            <li>PDO prepared statements + bcrypt hashing for security; Singleton &amp; DAO design patterns</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">PHP 8</span><span class="tag">MySQL</span><span class="tag">Bootstrap 5</span>
+            <span class="tag">MVC</span><span class="tag">PDO</span>
+          </div>
+          <div class="project-links">
+            <span class="link-disabled" title="In progress — not yet public">In Progress</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-head">
+            <h3>The Outfit</h3>
+            <span class="project-date">March 2026</span>
+          </div>
+          <p class="project-sub">Fashion E-Commerce Mobile Application</p>
+          <ul class="project-points">
+            <li>17-screen cross-platform app built with Flutter/Dart, Firebase Auth, Firestore, and Provider state management</li>
+            <li>Product browsing, category filters, wishlist, cart, and multi-step checkout with real-time sync</li>
+            <li>Reduced checkout steps by 40% through iterative UI/UX redesign; shipped a production Android APK (59.9MB)</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Firebase</span>
+            <span class="tag">Provider</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AffiDexz/The_Outfit" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://linkedin.com/posts/mohamed-affan-dev_flutter-firebase-mobiledevelopment-ugcPost-7476326824290037760-6rc-" target="_blank" rel="noopener">LinkedIn Post ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-head">
+            <h3>ICST Hostel Management System</h3>
+            <span class="project-date">May 2026</span>
+          </div>
+          <p class="project-sub">Full-Stack Web Application</p>
+          <ul class="project-points">
+            <li>Led a 4-member Agile/Scrum team as Project Manager — Jira sprint planning, Figma wireframes, client communication</li>
+            <li>React + Node.js + MySQL app with 3-role RBAC managing 253 real students across 72 rooms</li>
+            <li>Course-based fee structures, room allocation, and PDF report export; 101 files deployed with full docs</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Express.js</span>
+            <span class="tag">MySQL</span><span class="tag">REST API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AffiDexz/ICST-HMS" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://linkedin.com/posts/mohamed-affan-dev_react-nodejs-mysql-ugcPost-7480475772525105152-14TK" target="_blank" rel="noopener">LinkedIn Post ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-head">
+            <h3>Online Bookstore</h3>
+            <span class="project-date">June 2025</span>
+          </div>
+          <p class="project-sub">E-Commerce Web Application</p>
+          <ul class="project-points">
+            <li>Dynamic e-commerce app with catalogue, search &amp; filter across 100+ book listings</li>
+            <li>Full shopping cart and checkout flow using PHP sessions and MySQL for order persistence</li>
+            <li>Fully responsive layout across mobile, tablet, and desktop using CSS Grid and Bootstrap</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">PHP</span>
+            <span class="tag">MySQL</span><span class="tag">Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AffiDexz/online-bookstore" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://linkedin.com/posts/mohamed-affan-dev_webdevelopment-github-php-activity-7342120879742447617-O24P" target="_blank" rel="noopener">LinkedIn Post ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <p class="section-tag reveal">Certifications</p>
+      <h2 class="section-title reveal">Verified skills</h2>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon">JS</div>
+          <h3>JavaScript (Basic)</h3>
+          <p class="cert-meta">HackerRank · July 2026</p>
+          <p class="cert-id">ID: 6115D6D32C8F</p>
+          <a class="btn btn-outline btn-sm" href="assets/certificates/javascript-basic-hackerrank.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">PS</div>
+          <h3>Problem Solving (Basic)</h3>
+          <p class="cert-meta">HackerRank · July 2026</p>
+          <p class="cert-id">ID: 168B285AD9F4</p>
+          <a class="btn btn-outline btn-sm" href="assets/certificates/problem-solving-basic-hackerrank.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">SQL</div>
+          <h3>SQL (Basic)</h3>
+          <p class="cert-meta">HackerRank · July 2026</p>
+          <p class="cert-id">ID: 42BDA00FB9CA</p>
+          <a class="btn btn-outline btn-sm" href="assets/certificates/sql-basic-hackerrank.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">PY</div>
+          <h3>Python Data Structures</h3>
+          <p class="cert-meta">SoloLearn · September 2022</p>
+          <p class="cert-id">ID: CT-U2JPMJUI</p>
+          <a class="btn btn-outline btn-sm" href="assets/certificates/python-data-structures-sololearn.png" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <p class="section-tag reveal">Education</p>
+      <h2 class="section-title reveal">Academic background</h2>
+
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>BSc (Hons) in Information Technology</h3>
+              <span class="timeline-date">2024 – Present · Expected Graduation 2027</span>
+            </div>
+            <p class="timeline-org">SLTC Research University (ICST Campus), Punanai</p>
+            <p class="timeline-desc">
+              Relevant coursework: Software Engineering, Database Systems, Mobile Application
+              Development, Object-Oriented Programming (OOP), Web Technologies, Artificial
+              Intelligence &amp; Machine Learning, IT Project Management, Enterprise Application Development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <p class="section-tag reveal">Contact</p>
+      <h2 class="section-title reveal">Let's work together</h2>
+      <p class="contact-sub reveal">
+        I'm actively looking for a software engineering internship. Feel free to reach out —
+        I usually reply within a day.
+      </p>
+
+      <div class="contact-grid reveal">
+        <a class="contact-card" href="mailto:mamohamedaffan@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h18v14H3z"/><path d="m3 6 9 7 9-7"/></svg>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">mamohamedaffan@gmail.com</span>
+          </div>
+        </a>
+        <a class="contact-card" href="tel:+94775774412">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+94 77 577 4412</span>
+          </div>
+        </a>
+        <a class="contact-card" href="https://github.com/AffiDexz" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.94 3.2 9.13 7.65 10.61.56.1.76-.24.76-.54 0-.27-.01-1.16-.02-2.11-3.11.68-3.77-1.32-3.77-1.32-.51-1.3-1.24-1.65-1.24-1.65-1.01-.7.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.71 2.62 1.22 3.26.93.1-.72.39-1.22.71-1.5-2.49-.28-5.1-1.24-5.1-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.24-5.12 5.52.4.35.76 1.03.76 2.08 0 1.5-.01 2.71-.01 3.08 0 .3.2.65.77.54 4.44-1.48 7.64-5.67 7.64-10.61C23.02 5.24 18.27.5 12 .5z"/></svg>
+          <div>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/AffiDexz</span>
+          </div>
+        </a>
+        <a class="contact-card" href="https://linkedin.com/in/mohamed-affan-dev" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          <div>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/mohamed-affan-dev</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <p>&copy; <span id="year"></span> Mohamed Azick Mohamed Affan. All rights reserved.</p>
+    <p class="footer-built">Built from scratch with HTML, CSS &amp; JavaScript.</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
