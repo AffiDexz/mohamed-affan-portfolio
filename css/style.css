@@ -18,38 +18,6 @@
   --header-h: 72px;
 }
 
-:root[data-theme="light"] {
-  --bg: #f8fafc;
-  --bg-alt: #ffffff;
-  --surface: #ffffff;
-  --surface-hover: #f1f5f9;
-  --border: #e2e8f0;
-  --text: #0f172a;
-  --text-muted: #475569;
-  --text-faint: #94a3b8;
-  --accent: #0d9488;
-  --accent-2: #6366f1;
-  --accent-contrast: #ffffff;
-  --shadow: 0 20px 40px -20px rgba(15,23,42,0.15);
-}
-
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
-    --bg: #f8fafc;
-    --bg-alt: #ffffff;
-    --surface: #ffffff;
-    --surface-hover: #f1f5f9;
-    --border: #e2e8f0;
-    --text: #0f172a;
-    --text-muted: #475569;
-    --text-faint: #94a3b8;
-    --accent: #0d9488;
-    --accent-2: #6366f1;
-    --accent-contrast: #ffffff;
-    --shadow: 0 20px 40px -20px rgba(15,23,42,0.15);
-  }
-}
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
@@ -111,13 +79,32 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 700; letter-spacing: -0
 }
 
 .logo {
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 1.25rem;
-  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   white-space: nowrap;
 }
-.logo span { color: var(--accent); }
+.logo-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: var(--accent-contrast);
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: -0.02em;
+}
+.logo-text {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
 
 .nav {
   display: flex;
@@ -152,22 +139,6 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 700; letter-spacing: -0
   align-items: center;
   gap: 12px;
 }
-
-.icon-btn {
-  background: none;
-  border: 1px solid var(--border);
-  color: var(--text-muted);
-  width: 38px; height: 38px;
-  border-radius: 10px;
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer;
-  transition: color .2s ease, border-color .2s ease, background .2s ease;
-}
-.icon-btn:hover { color: var(--accent); border-color: var(--accent); }
-.icon-btn .icon { width: 18px; height: 18px; }
-.icon-btn .moon { display: none; }
-:root[data-theme="light"] .icon-btn .sun { display: none; }
-:root[data-theme="light"] .icon-btn .moon { display: block; }
 
 /* ===== Buttons ===== */
 .btn {

@@ -1,17 +1,3 @@
-// ===== Theme toggle =====
-const root = document.documentElement;
-const themeToggle = document.getElementById('themeToggle');
-const storedTheme = localStorage.getItem('theme');
-if (storedTheme) root.setAttribute('data-theme', storedTheme);
-
-themeToggle.addEventListener('click', () => {
-  const current = root.getAttribute('data-theme') ||
-    (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-  const next = current === 'dark' ? 'light' : 'dark';
-  root.setAttribute('data-theme', next);
-  localStorage.setItem('theme', next);
-});
-
 // ===== Mobile nav toggle =====
 const navToggle = document.getElementById('navToggle');
 const primaryNav = document.getElementById('primaryNav');
